@@ -6,7 +6,7 @@
  */
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic);
 html {
-  font-family: sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -575,7 +575,7 @@ body {
   background: white;
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'Open Sans' sans-serif;
+  font-family: 'Ubuntu';
   color: #666;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -590,14 +590,19 @@ h2 {
   text-align: center;
   padding: 50px 0 30px; }
 
+.kicker {
+  font-size: 22px;
+  font-weight: 300;
+}
+
 @media sceen and (max-width: 480px) {
   h2 {
     padding: 50px 0 50px; } }
 
-h2, header nav a, header .kicker, footer .lockup a, #h_small #nav_small a, #h_small .kicker {
+h2, header nav a, footer .lockup a, #h_small #nav_small a, #h_small .kicker {
   font-size: 14px;
   font-weight: 700;
-  text-transform: uppercase; }
+   }
 
 @media only screen and (min-width: 1070px) {
   .logo {
@@ -876,6 +881,7 @@ footer {
   max-width: 750px;
   padding: 0 15px;
   margin: 50px auto;
+  margin-top: 25px;
   font-size: 22px;
   font-weight: 30;
   text-align: center; }
