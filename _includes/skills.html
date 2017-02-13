@@ -1,0 +1,42 @@
+<div id="skillSection">
+    <h2 class="section-heading">My Skillset</h2>
+    <hr class="bar"/>
+    
+    <div class="skills container">
+        
+        <div class="wow zoomIn col-lg-6 col-lg-offset-3">
+                <canvas id="{{ site.skills.id }}" height="50" width="50"></canvas>
+        </div>
+
+        <script>
+            var ctx = document.getElementById("{{ site.skills.id }}");
+            var data = {
+                labels: "{{ site.skills.aspects }}".split(","),
+                datasets: [{
+                    label: "{{ site.skills.label }}",
+                    backgroundColor: "rgba(179,181,198,0.2)",
+                    borderColor: "#3385FF",
+                    pointBackgroundColor: "#3385FF",
+                    pointBorderColor: "#fff",
+                    pointHoverBackgroundColor: "#3385FF",
+                    pointHoverBorderColor: "#3385FF",
+                    data: [{{ site.skills.percentage }}]
+                }]
+            };
+            var myRadarChart = new Chart(ctx, {
+                type: 'radar',
+                data: data,
+                options: {
+                    scale: {
+                        responsive: true,
+                        ticks: {min: 0, max: 100},
+                        lineArc: false,
+                        pointLabels: {fontSize: 14},
+                    },
+                    legend: {display: false},
+                }
+            });
+        </script>
+    </div>
+
+</div>

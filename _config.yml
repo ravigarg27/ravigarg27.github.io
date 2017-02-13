@@ -12,3 +12,11 @@ url: http://127.0.0.1:4000  # url should be changed to 'http://www.jack003.com/h
 name: Ravi Garg
 markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+
+#For the skills section
+skills:
+  label: Programming skills
+  id : cs
+  aspects: Python, Java, Javascript, Machine Learing, Android, NLP, Computer Vision 
+  percentage: 90, 90, 65, 80, 70, 90, 50

@@ -580,27 +580,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
-#Experience {
-  font-size: 35px;
-  padding-bottom: 0px;
-}
-
-#about-me {
-  font-size: 35px;
-  padding-bottom: 0px;
-}
-
-#Details {
-  font-size: 35px;
-  padding-bottom: 0px;
-}
-
-#Contact {
-  font-size: 35px;
-  padding-bottom: 0px;
-}
-
-#Blog {
+.section-heading {
   font-size: 35px;
   padding-bottom: 0px;
 }
@@ -900,7 +880,7 @@ footer {
   font-weight: 30;
   text-align: center; }
 
-.section-contact {
+.contact {
   background: #e5eaee;
   text-align: center; }
 
@@ -1445,9 +1425,7 @@ form {
     float: left;
     position: relative;
     padding: 10px;
-    padding-top: 20%;
     overflow: hidden;
-    background-image: url(../img/project.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
